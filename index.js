@@ -18,7 +18,7 @@ const createDataProxy = (data) =>
       },
   })
 
-const X = () => {
+export const Sigbus = () => {
     const x = {
       events: {},
       func: {},
