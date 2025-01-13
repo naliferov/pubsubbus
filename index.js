@@ -24,7 +24,7 @@ export const sigbus = () => {
       func: {},
       
       async p(event, data = {}) {
-        const dataObj = typeof data === 'function' ? data : createDataProxy(data)
+        const dataObject = typeof data === 'function' ? data : createDataProxy(data)
 
         const func = this.func[event]
         if (!func) {
@@ -39,7 +39,7 @@ export const sigbus = () => {
         }
 
         if (typeof func !== 'function') console.log(event, func)
-        return func(dataObj)
+        return func(dataObject)
       },
       async s(event, func) {
         this.func[event] = func
