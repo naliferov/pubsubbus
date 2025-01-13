@@ -18,7 +18,7 @@ const createDataProxy = (data) =>
       },
   })
 
-export const Sigbus = () => {
+export const sigbus = () => {
     const x = {
       events: {},
       func: {},
@@ -43,10 +43,6 @@ export const Sigbus = () => {
       },
       async s(event, func) {
         this.func[event] = func
-
-        if (event.at(0) === '@') {
-          console.log('closure event', event) 
-        }
 
         const events = this.events[event]
         if (!events) return this
