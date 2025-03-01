@@ -1,7 +1,7 @@
 {
-    "name": "sigbus",
+    "name": "pubsubbus",
 	"version": "1.0.0",
-	"description": "Simple data-bus",
+	"description": "Simple pubsub",
 	"license": "MIT",
     "main": "index.js"
 }s
